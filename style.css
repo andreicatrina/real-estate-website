@@ -4,24 +4,45 @@
 
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #272727;
+  background-color: #f2f2f2;
+}
+
+.frame {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(153, 75, 255),
+    #6935fd
+  );
 }
 
 header {
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   width: 1140px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .header-child {
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 
 #my-header {
@@ -31,11 +52,202 @@ header {
   margin-left: 12px;
   margin-right: 12px;
   text-decoration: none;
-  color: black;
+  color: #272727;
   padding-left: 8px;
   padding-right: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .header-nav-link:hover {
-  background-color: red;
+  animation: fadeInRed 3s forwards;
+}
+
+@keyframes fadeInRed {
+  from {
+    background-color: white;
+    border: 1px solid white;
+  }
+
+  to {
+    background-color: red;
+    border: 1px solid black;
+  }
+}
+
+.button-signup {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6935fd;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 2px solid;
+  background-color: #ffffff;
+  padding-left: 32px;
+  padding-right: 32px;
+  cursor: pointer;
+  transition-duration: 0.6s, 0.6s;
+  transition-property: background-color, color;
+}
+
+.button-signup:hover {
+  background-color: #6935fd;
+  color: #ffffff;
+}
+
+.home-logo {
+  font-size: 36px;
+  line-height: 44px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #6935fd;
+  letter-spacing: -1px;
+}
+
+.landing-section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.landing-content {
+  max-width: 750px;
+  width: 100%;
+}
+
+.landing-text h1 {
+  font-size: 70px;
+  letter-spacing: -2px;
+  font-weight: 400;
+  line-height: 70px;
+  margin-top: 132px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.landing-text p {
+  font-size: 22px;
+  line-height: 38px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  display: flex;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #272727;
+  border: none;
+  border-left: 2px solid #f2f2f2;
+  padding-left: 24px;
+  outline: none;
+}
+
+.search-icon {
+  height: 24px;
+  width: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-button {
+  background-color: #6935fd;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 49px;
+  padding-right: 49px;
+  border-radius: 2px;
+  margin-left: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.search-results {
+  margin-top: 40px;
+}
+
+.button-src-history {
+  width: 100%;
+  height: 70px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.result-location {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.result-details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #616161;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-logo {
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+
+.footer-button {
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 14px;
+  color: #a8a8a8;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition-duration: 0.6s;
+  transition-property: color;
+}
+
+.footer-button:hover {
+  color: #272727;
 }

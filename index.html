@@ -4,20 +4,84 @@
     <title>Real Estate Home</title>
     <meta name="description" content="Best real estate website" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <div class="header-child">LOGO</div>
-        <div class="header-child">
-          <a class="header-nav-link" href="https://www.google.ro"
-            >Buy a house</a
-          >
-          <a class="header-nav-link" href="www.google.ro">Rent a house</a>
-          <a class="header-nav-link" href="www.google.ro">Mortgage</a>
+    <div class="frame">
+      <header>
+        <div class="header-content">
+          <div class="header-child">
+            <a class="home-logo" href="https://www.google.ro">housen</a>
+          </div>
+          <div class="header-child nav-links">
+            <a class="header-nav-link" href="https://www.google.ro"
+              >Buy a house</a
+            >
+            <a class="header-nav-link" href="www.google.ro">Rent a house</a>
+            <a class="header-nav-link" href="www.google.ro">Mortgage</a>
+          </div>
+          <div class="header-child">
+            <button class="button-signup" type="button">Sign up</button>
+          </div>
         </div>
-        <div class="header-child">Autentificare</div>
-      </div>
-    </header>
+      </header>
+      <section class="landing-section">
+        <div class="landing-content">
+          <div class="landing-text">
+            <h1>Find your ideal home</h1>
+            <p>
+              Search from more than 19 million of inspected appartments, houses,
+              cottages, villas, manors and mansions
+            </p>
+          </div>
+          <div class="landing-search">
+            <div class="search-bar">
+              <img class="search-icon" src="magnify.png" />
+              <input type="text" placeholder="Search for address" />
+              <button class="Search-button" type="button">Search</button>
+            </div>
+            <div class="search-results">
+              <button class="button-src-history" type="button">
+                <span class="result-location">Calabasas,CA </span>
+                <span class="result-details"
+                  >$1.5k+ / 2Beds / Apt. ... 3 more
+                </span>
+              </button>
+              <button class="button-src-history" type="button">
+                <span class="result-location">Calabasas,CA </span>
+                <span class="result-details"
+                  >$1.5k+ / 2Beds / Apt. ... 3 more
+                </span>
+              </button>
+              <button class="button-src-history" type="button">
+                <span class="result-location">Calabasas,CA </span>
+                <span class="result-details"
+                  >$1.5k+ / 2Beds / Apt. ... 3 more
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-child">
+            <span class="footer-logo">Housen © 2020</span>
+          </div>
+
+          <div class="footer-child">
+            <button class="footer-button">About</button>
+            <button class="footer-button">FAQ</button>
+            <button class="footer-button">Terms & Conditions</button>
+            <button class="footer-button">Privacy Policy</button>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
